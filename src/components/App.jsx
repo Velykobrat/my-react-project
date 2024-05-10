@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Alert } from './Alert';
+import { HiUser } from "react-icons/hi";
 import BookList from './BookList';
 import Product from './Product';
 import './App.css';
@@ -16,6 +17,7 @@ const favouriteBooks = [
 const App = () => {
   return (
     <div>
+
       <h1>Best selling</h1>
 
       <Product
@@ -46,7 +48,11 @@ const App = () => {
         Please update your profile contact information
       </Alert>
       </>
+      <div>
+      <p><HiUser className="my-icon" size="24" /> {name}</p>
     </div>
+    </div>
+    
   );
 };
 
